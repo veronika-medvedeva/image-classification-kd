@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Upload an Image for Prediction</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadImage()">Upload & Predict</button>
+
+    <!-- Display the uploaded image -->
+    <div id="imageContainer" style="display:none;">
+        <h3>Uploaded Image</h3>
+        <img id="uploadedImage" style="max-width: 300px; margin-top: 10px;" />
+    </div>
+
+    <!-- Display the prediction result -->
+    <div id="resultContainer" style="display:none;">
+        <h3>Prediction Result</h3>
+        <p id="result"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
